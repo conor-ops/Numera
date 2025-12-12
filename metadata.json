@@ -1,0 +1,5 @@
+{
+  "name": "BizBalance",
+  "description": "A comprehensive business balancing tool to track Accounts Receivable, Payable, Bank Balances, and calculate Business Net Exact (BNE) with AI-powered financial insights.",
+  "requestFramePermissions": []
+}
