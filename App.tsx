@@ -130,7 +130,7 @@ function App() {
              <div className="flex bg-slate-100 rounded p-1">
                 <button 
                   onClick={() => setUseStrictFormula(false)}
-                  className={`px-3 py-1 text-xs font-medium rounded transition-all ${!useStrictFormula ? 'bg-white shadow text-slate-900' : 'text-slate-500'}`}
+                  className={`px-3 py-1 text-xs font-medium rounded transition-all ${useStrictFormula ? 'text-slate-500' : 'bg-white shadow text-slate-900'}`}
                 >
                     Standard (Add)
                 </button>

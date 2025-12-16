@@ -65,6 +65,7 @@ const BankInput: React.FC<BankInputProps> = ({ accounts, onUpdate }) => {
                         value={acc.type}
                         onChange={(e) => updateAccount(acc.id, 'type', e.target.value as AccountType)}
                         className="p-1 text-xs border border-slate-200 rounded bg-white text-slate-600"
+                        aria-label="Account type"
                     >
                         <option value={AccountType.CHECKING}>Checking</option>
                         <option value={AccountType.SAVINGS}>Savings</option>
@@ -85,8 +86,10 @@ const BankInput: React.FC<BankInputProps> = ({ accounts, onUpdate }) => {
                 />
                 </div>
                 <button
+                type="button"
                 onClick={() => removeAccount(acc.id)}
                 className="p-2 text-slate-400 hover:text-danger transition-colors"
+                aria-label="Remove bank account"
                 >
                 <Trash2 size={18} />
                 </button>
@@ -96,6 +99,7 @@ const BankInput: React.FC<BankInputProps> = ({ accounts, onUpdate }) => {
       </div>
 
       <button
+        type="button"
         onClick={addAccount}
         className="mt-4 flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-accent transition-colors"
       >
